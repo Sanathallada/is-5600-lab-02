@@ -107,8 +107,8 @@ function renderPortfolio(user, stocks) {
     const sharesEl = document.createElement('p');
     const actionEl = document.createElement('button');
 
-    symbolEl.innerText = Symbol: ${symbol};
-    sharesEl.innerText = Shares: ${owned};
+    symbolEl.innerText = `Symbol: ${symbol}`;
+    sharesEl.innerText = `Shares: ${owned}`;
     actionEl.innerText = 'View';
     actionEl.setAttribute('id', symbol);
 
@@ -139,6 +139,6 @@ function viewStock(symbol, stocks) {
     document.querySelector('#stockSector').textContent = stock.sector;
     document.querySelector('#stockIndustry').textContent = stock.subIndustry;
     document.querySelector('#stockAddress').textContent = stock.address;
-    document.querySelector('#logo').src = logos/${symbol}.svg;
+    document.querySelector('#logo').src = `logos/${symbol}.svg`;
   }
 }
